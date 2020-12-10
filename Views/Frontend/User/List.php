@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test User</title>
-    <link rel="stylesheet" type="text/css" href="./public/css/site/index.css"/>
+    <link rel="stylesheet" type="text/css" href="./Public/CSS/Frontend/Index.css"/>
 </head>
 <body>
     <div class="container">
@@ -29,7 +29,7 @@
                             if($key===0) echo("checked = 'true'");?>/>
                         </td>
                     </tr>
-                    <?php endforeach?>    
+                    <?php endforeach ?>    
                 </tbody>
             </table>
         </form>
@@ -73,7 +73,7 @@
    * @return void
    */
   function nintei(){
-    document.form_main.setAttribute("action","./site/view/nintei.php");
+    document.form_main.setAttribute("action","?controller=user&action=nintei");
     document.form_main.submit();
     }
 </script>

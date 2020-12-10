@@ -6,10 +6,16 @@ class UserController extends BaseController {
         $this->loadModel('UserModel');
     }
 
-    public function index(){
+    public function list(){
 
-        $userInfo = array('name'=> 'ichiro', 'pass'=>'12344');
-        return $this->view('frontend.user.index',$userInfo);
+        //Get data from DB
+        $lst_user = [];
+        $data_json = json_encode($lst_user);
+        $data=['lst_user' => $lst_user,
+            'data_json' => $data_json
+        ];
+        //
+        return $this->view('Frontend.User.List',$data);
     }
 
     public function login(){
@@ -30,9 +36,15 @@ class UserController extends BaseController {
         return $this->view('Frontend.User.Login',$data);
     }
 
-    public function show()
-    {
-        echo __METHOD__;
+    public function nintei(){
+
+        //Get data from DB
+        $dt_user = [];
+        $data=['dt_user' => $dt_user,
+        ];
+        //
+        return $this->view('Frontend.User.Nintei',$data);
     }
+
 }
 ?>
