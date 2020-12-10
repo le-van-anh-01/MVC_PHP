@@ -1,0 +1,47 @@
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+}
+
+th{
+    background-color: #cfcfcf;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.table-main tr:hover{
+    background-color: rgb(200, 247, 248);
+}
+
+.selected {
+    background-color: rgb(156, 245, 247);
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+}
+
+.side-left{
+    min-height: 500px;
+    overflow: scroll;
+    border: 2px solid gray;
+}
+
+/* .side-right{
+
+} */
+
+.btn-common{
+    margin: 50px auto 0px 50px;
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    border: cornflowerblue;
+    border-radius: 3px;
+}

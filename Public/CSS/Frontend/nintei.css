@@ -1,0 +1,51 @@
+.form{
+    min-height: 250px;
+    width: 500px;
+    margin: 50px auto 0px auto;
+    background-color: rgb(209, 243, 243);
+    padding: 50px 50px 20px 20px;
+    font-size: 18px;
+}
+
+.row{
+    display: flex;
+    margin-top: 10px;
+}
+.row-label{
+    width: 190px;
+    padding-right: 10px;
+    text-align: end;
+}
+
+.row-input{
+    flex: 1;
+}
+.row-button{
+    margin-top: 20px;
+    margin-right: 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-nintei{
+    margin-left: 40px;
+    min-width: 100px;
+    min-height: 32px;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    border: cornflowerblue;
+    border-radius: 3px;
+}
+
+.input-id{
+    background-color: rgb(192, 190, 190);
+    border: none;
+}
+
+.btn-cancel{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}

@@ -1,0 +1,36 @@
+.form-login{
+    min-height: 100px;
+    width: 400px;
+    margin: 50px auto 0px auto;
+    background-color: rgb(209, 243, 243);
+    padding: 50px 50px 20px 50px;
+    font-size: 18px;
+}
+
+.row-form{
+    padding: 8px 0px;
+    display: flex;
+}
+
+.lable-row{
+    width: 100px;
+}
+
+.input-row{
+    flex:1;
+}
+
+.foot{
+    display: flex;
+    margin-top: 20px;
+}
+.btn-login{
+    margin: auto;
+    min-width: 100px;
+    min-height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: cornflowerblue;
+    border: cornflowerblue;
+    border-radius: 3px;
+}
