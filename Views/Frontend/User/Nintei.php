@@ -11,24 +11,24 @@
         <form class="form" action="?controller=user&action=nintei" method="post">
             <div class="row">
                 <label class="row-label">ID:</label>
-                <input name="user_id" class="row-input input-id" type="text" readonly <?php echo("value='{$dt_user['UserID']}'")?>/>
+                <input name="user_id" class="row-input input-id" type="text" readonly <?php echo("value='{$user['UserID']}'")?>/>
             </div>
             <div class="row">
                 <label class="row-label">名前:</label>
-                <input name="user_name" class="row-input" type="text"<?php echo("value='{$dt_user['UserName']}'")?>/>
+                <input name="user_name" class="row-input" type="text"<?php echo("value='{$user['UserName']}'")?>/>
             </div>
             <div class="row">
                 <label class="row-label">ログインID:</label>
-                <input name="login_id" class="row-input" type="text" <?php echo("value='{$dt_user['LoginID']}'")?>/>
+                <input name="login_id" class="row-input" type="text" <?php echo("value='{$user['LoginID']}'")?>/>
             </div>
             <div class="row">
                 <label class="row-label">ログインパスワード:</label>
-                <input name="login_pass" class="row-input" type="password" <?php echo("value='{$dt_user['LoginPW']}'")?>/>
+                <input name="login_pass" class="row-input" type="password" <?php echo("value='{$user['LoginPW']}'")?>/>
             </div>
 
             <div class="row-button">
                 <button type="submit" class="btn-nintei" name="nintei" value="submit">認定</button>
-                <button type="button" class="btn-nintei" name="cancel" value="cancel" >キャンセル</button>
+                <button type="submit" class="btn-nintei" name="cancel" value="cancel" >キャンセル</button>
             </div>
         </form>
     </div>
@@ -36,7 +36,5 @@
 </html>
 
 <script type="text/javascript">
-    function btn_cancel(){
-        window.location.href = "http://localhost/test_user/index.php";
-    }
+    
 </script>

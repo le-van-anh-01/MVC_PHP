@@ -16,9 +16,9 @@
                     <th>LoginID</th>
                 </thead>
                 <tbody>
-                    <?php foreach($lst_user as $key=>$row) :?>
+                    <?php foreach($lstUser as $key=>$row) :?>
                     <tr <?php echo("id='tr_{$row['UserID']}'"); 
-                        echo(" onclick='display({$row['UserID']},{$data_json})'");
+                        echo(" onclick='display({$row['UserID']},{$dtJson})'");
                         if($key===0) echo("class = 'selected'");
                         ?>>
                         <td><?php echo($row["UserID"])?></td>
@@ -35,7 +35,7 @@
         </form>
         <div class="side-right">
             <div class="side-up">
-                <button class="btn-common btn-login" onclick="login()"  >ログイン</button>
+                <button type="submit" class="btn-common btn-login" onclick="login()">ログイン</button>
             </div>
             <div class="side-down">
                 <button class="btn-common btn-nintei" onclick="nintei()" >認定</button>

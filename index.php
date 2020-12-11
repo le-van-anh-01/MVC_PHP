@@ -11,7 +11,7 @@ session_start();
     $controllerName = ucfirst("{$controllerName}Controller");
 
     //get action
-    $actionName = $_REQUEST['action']?? 'login';
+    $actionName = $_REQUEST['action']?? 'list';
 
     require_once("./Controllers/{$controllerName}.php");
 

@@ -11,7 +11,7 @@
         <form class="form-login" action="?controller=user&action=login" method="POST">
             <div class="row-form">
                 <label class="lable-row">User ID:</label>
-                <input class="input-row" name="id" type="text" placeholder="ユーザIDを入力してください"/>
+                <input class="input-row" name="id" type="text" placeholder="ユーザIDを入力してください" <?php echo("value='{$loginID}'")?>/>
             </div>
             <div class="row-form">
                 <label class="lable-row">Password:</label>
